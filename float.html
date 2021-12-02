@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> float & clear   </title>
+<style>
+.container{ background-color: lightgray;
+width: 900px;
+margin: auto;
+}
+
+.item{
+border: 3px solid black;
+margin: 12px 3px;
+padding: 5px 3px;
+background-color: rgb(248,238,238);}
+
+#fruit{
+float:left;
+width:50%;}
+
+#computer{float:right;
+width:50%;}
+
+#stationary{
+clear:both;
+width:100%;}
+
+p,h1{
+text-align:right;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+<div id="fruit" class="item">
+<h3>FRUITS</h3> 
+<p id="fruitpara" class="para">abc</p>
+</div>
+
+<div id="computer" class="item">
+<h3>COMPUTER</h3> 
+<p id="computerpara" class="para">def</p>
+</div>
+
+<div id="stationary" class="item">
+<h3>STATIONARY</h3> 
+<p id="stationarypara" class="para">ghi</p>
+</div>
+</div>
+</body>
+</html>
