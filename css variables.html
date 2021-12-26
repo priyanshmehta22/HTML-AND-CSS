@@ -1,0 +1,21 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial scale=1>
+<meta http-equiv="X-UA-Compatible content="ie=edge">
+<title>CSS VARIABLES/ CUSTOM PROPERTIES</title>
+<style>
+:root{--box-color: blue;}
+.box{
+width: 200px; height: 200px; background-color: var(--box-color); border: 2px solid red; margin:12px 12px;}
+.container{display: flex;}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="box" id="box-1"><h2>card1</h2><p> hi my name is pri</p></div>
+<div class="box" id="box-2"><h2>card2</h2><p> nice to meet you</p></div>
+<div class="box" id="box-3"><h2>card3</h2><p>bye bye</p></div> 
+</div>
+</body>
+</html>    
