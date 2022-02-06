@@ -1,0 +1,10 @@
+var a=" yo wasssuppppppp";
+var age= 23;
+var ismale= true;
+document.write(a);
+document.write(a);
+a=" APPLE";
+document.write(a);
+document.write(a, age);
+a=" ORANGE";
+document.write(a);
