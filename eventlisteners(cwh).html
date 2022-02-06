@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event listners</title>
+</head>
+<style>
+    .btn{
+        padding: 10px 14px;
+        background-color: black;
+        color: white;
+        font-weight: bold;
+    }
+    
+</style>
+<body>
+    <!--browser events:
+    click
+    mouseover
+    mouseout
+    contextmenu
+    mousedown
+    mouseup
+    mousemove
+    submit
+    focus //when you click on the input field
+    DOMContentLoaded
+    transitionend-->
+    <div class="container">
+        <h1> this is a heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente optio illo itaque possimus tenetur
+            perferendis amet laudantium sequi commodi dolore sunt, obcaecati ex molestiae sit quaerat necessitatibus,
+            temporibus nisi repellat rem soluta. Quae, provident! Veritatis error blanditiis a esse ipsum ex sed,
+            doloremque fuga praesentium architecto nihil! Vitae eligendi fugit unde non tempora officiis sapiente
+            quaerat voluptatem hic alias. Hic laboriosam tempore quae at sapiente dolorem, iure doloribus, neque
+            accusantium earum labore nulla. Quia voluptates omnis quisquam, consectetur libero laborum deleniti
+            voluptatibus perspiciatis reiciendis nemo, quo delectus ducimus aliquid error sequi dicta aspernatur ullam
+            nulla itaque saepe voluptatum soluta iste. Ex eveniet beatae explicabo, quia fugit deserunt asperiores iusto
+            deleniti quos molestiae nihil mollitia placeat ullam blanditiis sapiente amet. Deserunt tempore officiis
+            eum, quis dicta, inventore maiores eveniet architecto neque aperiam a expedita exercitationem. Minus
+            deserunt debitis sequi rem ad ea, omnis fuga sapiente, porro, consequuntur molestias reprehenderit
+            necessitatibus possimus nostrum assumenda accusamus maxime quisquam commodi esse architecto? Laboriosam,
+            deserunt repudiandae optio porro eos qui animi aspernatur dolor minima ullam. Sunt quibusdam, dicta cumque
+            sapiente commodi voluptate dignissimos porro assumenda eos quis illum ducimus quaerat similique, iste ipsam
+            ad praesentium enim sed deserunt cum. Ducimus excepturi maiores, magni voluptatum quam facilis deserunt sunt
+            voluptatem commodi repellendus molestiae, iure illum obcaecati animi officia fugit possimus neque dolorum
+            corrupti alias asperiores quaerat accusamus, deleniti beatae! Minus hic enim vero deleniti, accusantium
+            iusto eligendi minima reprehenderit?</p>
+    </div>
+    
+<button id="btn" onclick="togglehide()">HIDE</button>
+<script>
+    let btn = document.getElementById('btn');
+    let para= document.getElementById('para');
+    btn.addEventListener('click',function a(){
+        if(para.style.display!= 'none'){
+        alert('are you sure you want to show the paragraph?');
+        btn.innerHTML="HIDE";
+    }
+    else{
+        alert('are you sure you want to hide the paragraph?');
+        btn.innerHTML="SHOW";
+    }
+    });
+    function togglehide(){
+        let btn = document.getElementById('btn');
+        let para= document.getElementById('para');
+        if(para.style.display!= 'none'){
+        para.style.display = 'none';}
+        else{
+            para.style.display = 'block';
+        }
+
+    }
+</script>
+</body>
+
+</html>

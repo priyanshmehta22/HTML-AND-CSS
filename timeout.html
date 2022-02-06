@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS SET timeout and clear Timeout </title>
+</head>
+<body>
+    <div class="container">
+        this is a continer
+    </div>
+    <script>
+        
+        var name= prompt("Enter your name");
+
+        console.log("hello");
+        //setTimeout:  allows us to run a func once
+        //setInterval: allows us to run a func every x seconds
+        function greet(name){
+            console.log("hello "+ name + " good morning");
+        }
+        setTimeout(greet, 2000, name);    // not greet() because we are passing the name as an argument
+    </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+let element= document.createElement('li');
+element.innerHTML="yo this is a new element";
+console.log(element);
+let ul= document.querySelector('ul.this');
+ul.appendChild(element);
+console.log(ul); 
+let elem2=document.createElement('h3');
+elem2.innerHTML="this is a new h3";
+console.log(elem2);
+ul.appendChild(elem2);
+element.replaceWith(elem2);

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALERT CONFIRM AND PROMPT</title>
+    
+</head>
+<body>
+    <div class="container"> this is a page</div>
+    <script>
+        let a = alert("hello, this is a message!"); // does not return anything
+        console.log(a); // undefined hogi value iski
+
+        let name=prompt("what is your name?", "guest");
+        console.log(name); // guest
+
+        let purchase = confirm("are you sure you want to buy this?");
+        console.log(purchase); // true
+    </script>
+</body>
+</html>
