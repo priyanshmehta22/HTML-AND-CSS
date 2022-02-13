@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MODAL WINDOW</title>
+    <style>
+      .container {
+        display: flex;
+        height: 200px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+      .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      #btn {
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid white;
+        background-color: black;
+        color: white;
+      }
+      #para {
+        width: 300px;
+        height: 500px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+      }
+      .mymodal {
+        background-color: gray;
+        color: white;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        display: none;
+      }
+      .close:hover,
+      .close:active {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      #btn:hover,
+      #btn:active {
+        color: #000;
+        background-color: white;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>MODAL WINDOW 1</h1>
+    <button id="btn">Open Modal</button>
+
+    <div class="mymodal" id="modal">
+      <span class="close">&times;</span>
+      <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+        necessitatibus iure quia nesciunt. At recusandae quo eius eveniet non
+        dicta placeat nam earum perspiciatis facere veritatis, delectus
+        perferendis eligendi, quod, autem labore molestiae maiores sequi aliquid
+        ullam. Aspernatur eveniet officia suscipit optio placeat voluptas
+        corporis, quas ex facilis error repellat dignissimos corrupti nam iusto
+        vel. Dignissimos nesciunt libero recusandae distinctio dolores aliquid
+        nam voluptas neque quis minus pariatur sed beatae ab ullam, omnis porro
+        doloribus perferendis itaque praesentium. Molestias quam dolorum totam
+        laborum animi explicabo pariatur, et dolore vero magnam rem excepturi
+        necessitatibus eveniet iste dolores architecto, repellendus laboriosam.
+        Ipsum! ipsum dolor sit amet consectetur adipisicing elit. Sunt eius
+        ratione dolor, ipsa quos quia quo error id officiis recusandae aliquam
+        iusto sequi asperiores, eligendi voluptatem vitae assumenda, architecto
+        quis esse quam modi! Odio quibusdam obcaecati tempora! Incidunt est
+        explicabo voluptates fugit ipsum natus. Perspiciatis aliquid beatae quas
+        hic quo.
+      </p>
+    </div>
+    <script src="modal class.js"></script>
+  </body>
+</html>
